@@ -10,5 +10,5 @@ You can find my photo portfolio here: <a href="https://io-film.vercel.app" targe
 
 ### How to reach me
 
-Email: <b>rayetzkiillya@gmail.com</b>
+Email: <b>rayetzkiillya@gmail.com</b> <br/>
 Telegram: <b>@the_vanity_fair</b>
