@@ -2,10 +2,13 @@
   "name": "rayetzki",
   "version": "0.0.1",
   "description": "Portfolio of Illia Raietskyi",
-  "browserslist": ["defaults"],
+  "source": "index.html",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
-    "start": "npx parcel index.html",
-    "build": "npx parcel build"
+    "start": "parcel index.html",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,6 @@
   "license": "ISC",
   "homepage": "https://github.com/rayetzki/rayetzki#readme",
   "devDependencies": {
-    "parcel": "^2.0.1"
+    "parcel": "latest"
   }
 }
