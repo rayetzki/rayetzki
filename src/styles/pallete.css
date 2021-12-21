@@ -1,0 +1,14 @@
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
+    --card-back-page: linear-gradient(#fcfcfc, #ffffff);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
+    --card-back-page: linear-gradient(#fcfcfc, #ffffff);
+  }
+}

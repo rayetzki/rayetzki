@@ -1,0 +1,40 @@
+@import './styles/fonts.css';
+@import './styles/typewriter.css';
+@import './styles/pallete.css';
+
+body {
+  height: calc(100vh - 16px);
+}
+
+/* Карточка */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.card__front {
+  background: var(--card-front-page);
+}
+
+.card__back {
+  background: var(--card-back-page);
+}
+
+.card h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-block: 0 auto;
+  max-width: fit-content;  
+}
+
+.card__front h1 {
+  font-family: 'DS Moster', sans-serif;
+  font-weight: lighter;
+  animation: typing 2.5s steps(20, end);
+}
+
+.card__back h1 {
+  font-family: 'Biro Script Plus Sloppy';
+}

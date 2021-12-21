@@ -2,12 +2,12 @@
   "name": "rayetzki",
   "version": "0.0.1",
   "description": "Portfolio of Illia Raietskyi",
-  "source": "index.html",
+  "source": "src/index.html",
   "browserslist": [
     "defaults"
   ],
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build"
   },
   "repository": {
