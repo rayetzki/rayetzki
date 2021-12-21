@@ -1,0 +1,25 @@
+{
+  "name": "rayetzki",
+  "version": "0.0.1",
+  "description": "Portfolio of Illia Raietskyi",
+  "browserslist": ["defaults"],
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayetzki/rayetzki.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Web Dev",
+    "Dev Portfolio"
+  ],
+  "author": "Illia Raietskyi @rayetzki",
+  "license": "ISC",
+  "homepage": "https://github.com/rayetzki/rayetzki#readme",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
