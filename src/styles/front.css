@@ -1,0 +1,161 @@
+@import './theme.css';
+
+/* Шапка */
+
+.card__space {
+  margin-block-end: .25em;
+}
+
+.card__border--thin {
+  height: 100%;
+  border: 1px solid black;
+}
+
+.card__border--thick {
+  border: 3px solid black;
+}
+
+.card__front {
+  padding: .5em;
+  background: var(--card-front-page);
+}
+
+.card__front .card__header {
+  place-items: center;
+  justify-content: space-between;
+  padding-inline: .5em 1.5em;
+}
+
+.card__title--front {
+  max-height: fit-content;
+  max-width: min-content;
+  margin-block: .5em;
+  padding-inline: .75em 0;
+  font-size: large;
+  transform: rotate(0.1deg);
+}
+
+.card__number {
+  letter-spacing: 6px;
+  font-family: var(--typewriter-font);
+  font-weight: lighter;
+  color: var(--text-color);
+  transform: rotate(-0.2deg);
+  height: fit-content;
+  margin-block: 0;
+  font-size: x-large;
+}
+
+.card__front__icon {
+  height: fit-content;
+  position: relative;
+  top: 3px;
+}
+
+.card__warning--primary {
+  margin-block: .5em 0;
+  font-size: medium;
+  padding-inline: 1em;
+}
+
+.card__warning--secondary {
+  margin-block: 1em 0;
+  font-size: smaller;
+  padding-inline: 1em;
+}
+
+.card__warning--strong {
+  letter-spacing: 6px;
+}
+
+/* Форма */
+
+.card__form {
+  margin-block-start: .5em;
+  padding-inline: .75em;
+}
+
+.card__label--front {
+  line-height: .75em;
+}
+
+.card__label--italic {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.card__input--front {
+  font-size: larger;
+  max-height: 2rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.card__footer {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  place-content: center;
+  padding: .5em;
+  position: relative;
+}
+
+.card__photoborder {
+  --card--photo-border-dark: #737873;
+  --card--photo-border-light: #dbdbce;
+  border: 1px solid;
+  width: fit-content;
+  transform: rotate(1deg);
+  border-left-color: var(--card--photo-border-dark);
+  border-top-color: var(--card--photo-border-light);
+  border-right-color: var(--card--photo-border-dark);
+  border-bottom-color: var(--card--photo-border-dark);
+}
+
+.card__photo {
+  transform: rotate(-1deg);
+  object-fit: cover;
+}
+
+.card__signatures {
+  margin-block-start: 2em;
+  margin-inline-start: 1em;
+  padding-inline-end: .5em;
+}
+
+.card__signatures .card__label {
+  display: flex;
+  place-content: center;
+}
+
+.card__signatures .card__date .card__input {
+  letter-spacing: .01em;
+}
+
+.card__signature {
+  max-height: 1rem;
+  margin-block-start: .5rem;
+}
+
+.card__daymonth {
+  max-height: 1.5rem;
+  max-width: 75%;
+}
+
+.card__year {
+  max-width: 3ch;
+  margin-inline-start: .1em !important; 
+}
+
+.card__year .card__input {
+  max-height: 1rem;
+}
+
+.card__stamp {
+  position: absolute;
+  z-index: 1;
+  left: 25%;
+  bottom: 5px;
+  mix-blend-mode: color-burn;
+  transform: rotate(25deg);
+}

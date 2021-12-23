@@ -1,0 +1,9 @@
+@import './theme.css';
+
+.card__back {
+  background: var(--card-back-page);
+}
+
+.card__title--back {
+  font-family: var(--handwritten-font);
+}

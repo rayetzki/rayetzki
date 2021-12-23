@@ -1,40 +1,110 @@
 @import './styles/fonts.css';
 @import './styles/typewriter.css';
-@import './styles/pallete.css';
-
-body {
-  height: calc(100vh - 16px);
-}
+@import './styles/theme.css';
 
 /* Карточка */
+@import './styles/front.css';
+@import './styles/back.css';
 
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+body {
+  height: calc(100vh - 1em);
+}
+
+main {
   height: 100%;
 }
 
-.card__front {
-  background: var(--card-front-page);
+p {
+  margin-block: 0;
 }
 
-.card__back {
-  background: var(--card-back-page);
+.card {
+  display: grid;
+  grid-template-columns: minmax(100px, .8fr) 1fr;
+  height: 100%;
 }
 
-.card h1 {
-  overflow: hidden;
-  white-space: nowrap;
-  margin-block: 0 auto;
-  max-width: fit-content;  
+.card__wrapper--row {
+  display: flex;
+  flex-direction: row;
 }
 
-.card__front h1 {
-  font-family: 'DS Moster', sans-serif;
+.text--center {
+  text-align: center;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--adjust {
+  align-items: baseline;
+}
+
+.card__wrapper--col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__wrapper--wrap {
+  flex-wrap: wrap;
+}
+
+.card__title {
+  font-family: var(--typewriter-font);
   font-weight: lighter;
-  animation: typing 2.5s steps(20, end);
+  color: var(--text-color);
 }
 
-.card__back h1 {
-  font-family: 'Biro Script Plus Sloppy';
+.card__label {
+  font-family: var(--typewriter-font);
+  font-weight: lighter;
+  font-size: .8em;
+  opacity: .7;
+  min-width: fit-content;
+}
+
+.card__input--wrapper {
+  width: 100%;
+  margin-inline-start: .5em;
+  border-bottom: 2px solid currentColor;
+}
+
+.offset--1em {
+  padding-inline-start: 1em;
+}
+
+.offset--2em {
+  padding-inline-start: 2em;
+}
+
+.offset--3em {
+  padding-inline-start: 3em;
+}
+
+.offset--4em {
+  padding-inline-start: 4em;
+}
+
+.top--05em {
+  margin-block-start: .5em;
+} 
+
+.top--1em {
+  margin-block-start: 1em;
+}
+
+.card__input {
+  font-family: var(--handwritten-font);
+  outline: none;
+  user-select: none;
+  padding: 0;
+}
+
+.card__fieldgroup {
+  align-items: end; 
+}
+
+.card__input:focus-visible {
+  outline: none;
 }

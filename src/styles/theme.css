@@ -1,14 +1,20 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --typewriter-font: 'DS Moster', sans-serif;
+    --handwritten-font: 'Biro Script Plus Sloppy';
     --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
     --card-back-page: linear-gradient(#fcfcfc, #ffffff);
+    --text-color: #444d4f;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --typewriter-font: 'DS Moster', sans-serif;
+    --handwritten-font: 'Biro Script Plus Sloppy';
     --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
     --card-back-page: linear-gradient(#fcfcfc, #ffffff);
+    --text-color: #444d4f;
   }
 }

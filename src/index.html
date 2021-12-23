@@ -1,22 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Личное дело: Илья Раецкий</title>
+  <title>Отчетная Карточка</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="./styles.css" />
   <script type="module" src="./app.js"></script>
 </head>
 <body>
-  <article class='card'>
-    <section class='card__front'>
-      <h1>Личное дело</h1>
-    </section>
-    <section class="card__back">
-      <h1>Личное дело</h1>
-    </section>
-  </article>
+  <main>
+    <article class='card'>
+      <section class='card__front card__border--thick'>
+        <div class='card__border card__border--thin'>
+          <header class='card__header card__wrapper--row'>
+            <h2 class='card__title text--center card__title--front'>ОТЧЕТНАЯ КАРТОЧКА <br class='card__space' /> на П/Б</h1>
+            <h3 class='card__number'>№710921</h2>
+            <object class='card__front__icon' data="./assets/sign.svg" title="Иконка снежинки"></object>
+          </header>
+          <h3 class="card__title text--center card__warning--primary">По заполнению подлежит обязательному возвращению в ЦК ВКП (б)</h3>
+          <h4 class="card__title text--center card__warning--secondary">Заполняется разборчиво чернилами исключительно <strong class='card__warning--strong'>на русском языке</strong></h4>
+          <form novalidate class='card__form'>
+            <section class="card__fieldgroup card__wrapper--row">
+              <label class="card__label card__label--front" for='surname'>Фамилия</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='Раецкий' name='surname' />
+              </div>
+            </section>
+            <section class="card__fieldgroup card__wrapper--row">
+              <label class="card__label card__label--front" for='name'>Имя и отчество</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='Илья Станиславович' name='name' />
+              </div>
+            </section>
+            <section class="card__fieldgroup card__wrapper--row">
+              <label class="card__label card__label--front" for='birthdate'>Год Рождения</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front offset--2em' readonly aria-readonly="true" type="text" value='1997' name='birthdate' />
+              </div>
+            </section>
+            <section class="card__fieldgroup card__wrapper--row">
+              <label class="card__label card__label--front" for='datetime'>Время вступления в партию</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front offset--1em' readonly aria-readonly="true" type="text" value='июль 2019г' name='datetime' />
+              </div>
+            </section>
+            <section class="card__fieldgroup card__wrapper--row card__wrapper--wrap top--1em">
+              <label class="card__label card__label--front" for='department'>Наименование организации, выдавшей билет</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front offset--1em' readonly aria-readonly="true" type="text" value='ЦНАП Оболонского района г.Киев' name='department' />
+              </div>
+            </section>
+            <section class="card__fieldgroup card__wrapper--row offset--4em top--05em">
+              <label class="card__label card__label--italic card__label--front" for='sign'>Личная подпись</label>
+              <div class='card__input--wrapper'>
+                <input class='card__input card__input--front' style='font-weight: bold' readonly aria-readonly="true" type="text" value='Раецкий' name='sign' />
+              </div>
+            </section>
+          </form>
+          <footer class='card__footer top--1em'>
+            <img class='card__stamp' src='./assets/stamp.png' alt='Печать' width='170' height='170' />
+            <div class='card__photoborder'>
+              <img width="130" height="125" src="assets/photo.jpg" class="card__photo" alt='Фотография архаровца' />
+            </div>
+            <section class='card__signatures'>
+              <label class='card__label card__label--italic card__sign--front' for='secretary-sign'>Секретарь райкома</label>
+              <div class='card__input--wrapper card__signature'>
+                <img alt='Подпись главного' width='200' height='24' src='./assets/signature.png' />
+              </div>
+              <div class='top--1em card__wrapper--row text--adjust'>
+                <div class='card__input--wrapper card__daymonth'>
+                  <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='24 Cентября' name='date' />
+                </div>
+                <p class='card__label'>20</p>
+                <div class='card__input--wrapper card__year'>
+                  <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='19' name='year'>
+                </div>
+                <p class='card__label card__label--italic'>г.</p>
+              </div>
+            </section>
+          </footer>
+        </div>        
+      </section>
+      <section class="card__back"></section>
+    </article>
+  </main>
 </body>
 </html>

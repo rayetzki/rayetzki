@@ -1,0 +1,19 @@
+<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="18.16672" cy="18.16664" rx="3.5" ry="3.5"/>
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="18.16677" cy="29.5" rx="3.5" ry="3.5"/>
+    <path fill="#000000" stroke="#000" d="m19.66676,20" />
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="30.16677" cy="24.5" rx="3.5" ry="3.5"/>
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="29.50006" cy="10.8333" rx="3.5" ry="3.5" transform="rotate(7.23682, 29.5, 10.8336)"/>
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="6.16677" cy="24.5" rx="3.5" ry="3.5"/>
+    <ellipse fill="#4d575a" stroke="#4d575a" cx="5.5001" cy="10.5" rx="3.5" ry="3.5"/>
+    <path fill="#4d575a" stroke="#4d575a" d="m18.16677,8c-1.9337,0 -3.5,-1.5663 -3.5,-3.5c0,-1.9337 1.5663,-3.5 3.5,-3.5c1.9337,0 3.5,1.5663 3.5,3.5c0,1.9337 -1.5663,3.5 -3.5,3.5z"/>
+    <path fill="#666666" stroke="#4d575a" d="m18.66654,13.99979l-0.66667,-6" transform="rotate(5.06699, 18.3332, 10.9997)"/>
+    <path fill="none" stroke="#4d575a" d="m14.66654,16.66646l-5.33333,-4"/>
+    <line fill="none" stroke="#4d575a" x1="17.99988" y1="20.66646" x2="17.99988" y2="25.99979"/>
+    <line fill="none" stroke="#4d575a" x1="14.66654" y1="19.33312" x2="8.66654" y2="22.66646"/>
+    <path fill="none" stroke="#4d575a" d="m20.66654,19.33312l6,3.33333"/>
+    <line fill="none" stroke="#000" x1="317.89308" y1="148.6057" x2="323.89308" y2="146.21421" transform="rotate(155.621, 320.893, 147.41)"/>
+    <line fill="none" stroke="#4d575a" x1="20.6666" y1="15.99979" x2="27.33326" y2="13.99979" transform="rotate(-16.3247, 24, 14.9997)"/>
+  </g>
+</svg>
