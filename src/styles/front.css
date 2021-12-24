@@ -6,6 +6,10 @@
   margin-block-end: .25em;
 }
 
+.card__border {
+  border-radius: 15px 2px 15px 2px / 2px 15px 2px 15px;
+}
+
 .card__border--thin {
   height: 100%;
   border: 1px solid black;
@@ -54,13 +58,13 @@
 
 .card__warning--primary {
   margin-block: .5em 0;
-  font-size: medium;
+  font-size: large;
   padding-inline: 1em;
 }
 
 .card__warning--secondary {
   margin-block: 1em 0;
-  font-size: smaller;
+  font-size: small;
   padding-inline: 1em;
 }
 
@@ -85,7 +89,7 @@
 }
 
 .card__input--front {
-  font-size: larger;
+  font-size: x-large;
   max-height: 2rem;
   width: 100%;
   background-color: transparent;
@@ -157,5 +161,5 @@
   left: 25%;
   bottom: 5px;
   mix-blend-mode: color-burn;
-  transform: rotate(25deg);
+  transform: rotate(-25deg);
 }
