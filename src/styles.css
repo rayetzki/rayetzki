@@ -29,6 +29,25 @@ p {
   flex-direction: row;
 }
 
+.card__border {
+  --card--photo-border-dark: #737873;
+  --card--photo-border-light: #dbdbce;
+  border: 1px solid black;
+  border-radius: 15px 2px 15px 2px / 2px 15px 2px 15px;
+  border-left-color: var(--card--photo-border-dark);
+  border-top-color: var(--card--photo-border-light);
+  border-right-color: var(--card--photo-border-dark);
+  border-bottom-color: var(--card--photo-border-dark);
+}
+
+.card__border--thin {
+  border: 1px solid;
+}
+
+.card__border--thick {
+  border: 3px solid;
+}
+
 .text--center {
   text-align: center;
 }
@@ -92,6 +111,10 @@ p {
 
 .top--2em {
   margin-block-start: 2em;
+}
+
+.text--rotate {
+  writing-mode: sideways-lr;
 }
 
 .card__input {

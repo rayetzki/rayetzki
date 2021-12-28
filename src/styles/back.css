@@ -1,9 +1,116 @@
 @import './theme.css';
 
-.card__back {
-  background: var(--card-back-page);
+
+:root {
+  --number-width: 2.5em;
+  --date-width: calc(3 * var(--number-width));
+  --reasons-width: 150px;
+  --info-width: minmax(250px, 1fr);
 }
 
+.card__back [role="table"] {
+  width: inherit;
+  margin-inline: .5em; 
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* Шапка таблицы */
+
 .card__title--back {
+  margin-block-start: 0;
+  margin-block-end: .5em;
+  text-transform: uppercase;
+}
+
+.card__back .card__grid {
+  display: grid;
+  grid-template-columns: var(--number-width) var(--date-width) var(--info-width) var(--reasons-width);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.card__back .card__colrow {
+  display: flex;
+}
+
+.card__colrow--row {
+  flex-direction: row;
+}
+
+.card__colrow--col {
+  flex-direction: column;
+}
+
+.card__back .card__cell {
+  font-family: var(--typewriter-font);
+  font-size: 1em;
+  font-weight: 100;
+  padding: 6px;
+  border-left: none;
+  border-top: none;
+  border-right: 3px solid;
+}
+
+.card__back .card__date--header {
+  letter-spacing: 6px;
+  width: var(--date-width);
+}
+
+.card__date--header + .card__date--parts {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+}
+
+.card__date--parts .card__cell {
+  flex: 1;
+}
+
+.card__back .card__reasons--header {
+  display: flex;
+  font-size: small;
+}
+
+.card__back .card__reasons--header .card__cell,
+.card__back .card__info--header .card__cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Тело таблицы */
+
+.card__blankrow {
+  display: flex;
+  flex-direction: row;
+  min-height: 30px;
+  max-height: var(--number-width);
+  text-align: center;
+}
+
+.card__blankcell {
   font-family: var(--handwritten-font);
+  border-right: 3px solid black;
+  border-radius: 7px 1px 7px 1px / 1px 10px 1px 7px;
+}
+
+.card__number--body,
+.card__date--body {
+  flex-basis: var(--number-width);
+}
+
+.card__date--body {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card__info--body {
+  flex-grow: 1;
+}
+
+.card__reasons--body {
+  flex-basis: var(--reasons-width);
 }

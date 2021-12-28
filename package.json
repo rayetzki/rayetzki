@@ -7,11 +7,10 @@
     "defaults"
   ],
   "scripts": {
-    "clean": "rimraf dist .cache",
-    "dev": "yarn clean && yarn parcel:serve",
-    "build": "yarn clean && yarn parcel:build",
+    "dev": "yarn parcel:serve",
+    "build": "yarn parcel:build",
+    "watch": "parcel watch src/*.html --public-url='./'",
     "parcel:serve": "parcel src/*.html -p 5000",
-    "parcel:watch": "parcel watch src/*.html --public-url='./'",
     "parcel:build": "parcel build src/*.html --public-url='./'"
   },
   "repository": {
