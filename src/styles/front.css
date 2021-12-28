@@ -26,8 +26,8 @@
   max-width: min-content;
   margin-block: .5em;
   padding-inline: .75em 0;
-  font-size: large;
   transform: rotate(0.1deg);
+  font-size: large;
 }
 
 .card__number {

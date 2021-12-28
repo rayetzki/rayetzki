@@ -1,17 +1,16 @@
 @import './theme.css';
-
+@import './typewriter.css';
 
 :root {
   --number-width: 2.5em;
   --date-width: calc(3 * var(--number-width));
-  --reasons-width: 150px;
   --info-width: minmax(250px, 1fr);
+  --reasons-width: 155px;
 }
 
 .card__back [role="table"] {
   width: inherit;
   margin-inline: .5em; 
-  border-left: none;
   border-right: none;
   border-bottom: none;
 }
@@ -19,9 +18,12 @@
 /* Шапка таблицы */
 
 .card__title--back {
-  margin-block-start: 0;
-  margin-block-end: .5em;
   text-transform: uppercase;
+  margin-block: 0 .5em;
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 2.5s steps(20, end);
 }
 
 .card__back .card__grid {
@@ -88,6 +90,7 @@
   min-height: 30px;
   max-height: var(--number-width);
   text-align: center;
+  margin-inline: .5em; 
 }
 
 .card__blankcell {
