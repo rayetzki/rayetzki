@@ -1,0 +1,71 @@
+<section class='card__front card__border card__border--thick'>
+  <div class='card__border card__border--thin'>
+    <header class='card__header card__wrapper--row'>
+      <h2 class='card__title text--center card__title--front'>ОТЧЕТНАЯ КАРТОЧКА <br class='card__space' /> на П/Б</h1>
+      <h3 class='card__number'>№710921</h2>
+      <object class='card__front__icon' data="./assets/sign.svg" title="Иконка снежинки"></object>
+    </header>
+    <h3 class="card__title text--center card__warning--primary">По заполнению подлежит обязательному возвращению в ЦК ВКП (б)</h3>
+    <h4 class="card__title text--center card__warning--secondary">Заполняется разборчиво чернилами исключительно <strong class='card__warning--strong'>на русском языке</strong></h4>
+    <form novalidate class='card__form'>
+      <section class="card__fieldgroup card__wrapper--row">
+        <label class="card__label card__label--front" for='surname'>Фамилия</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='Раецкий' name='surname' />
+        </div>
+      </section>
+      <section class="card__fieldgroup card__wrapper--row">
+        <label class="card__label card__label--front" for='name'>Имя и отчество</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='Илья Станиславович' name='name' />
+        </div>
+      </section>
+      <section class="card__fieldgroup card__wrapper--row">
+        <label class="card__label card__label--front" for='birthdate'>Год Рождения</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front offset--2em' readonly aria-readonly="true" type="text" value='1997' name='birthdate' />
+        </div>
+      </section>
+      <section class="card__fieldgroup card__wrapper--row">
+        <label class="card__label card__label--front" for='datetime'>Время вступления в партию</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front offset--1em' readonly aria-readonly="true" type="text" value='июль 2019г' name='datetime' />
+        </div>
+      </section>
+      <section class="card__fieldgroup card__wrapper--row card__wrapper--wrap top--2em">
+        <label class="card__label card__label--front" for='department'>Наименование организации, выдавшей билет</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front offset--1em' readonly aria-readonly="true" type="text" value='ЦНАП Оболонского района г.Киев' name='department' />
+        </div>
+      </section>
+      <section class="card__fieldgroup card__wrapper--row offset--4em top--05em">
+        <label class="card__label card__label--italic card__label--front" for='sign'>Личная подпись</label>
+        <div class='card__input--wrapper'>
+          <input class='card__input card__input--front text--bold' readonly aria-readonly="true" type="text" value='Раецкий' name='sign' />
+        </div>
+      </section>
+    </form>
+    <footer class='card__footer top--2em'>
+      <img class='card__stamp' src='./assets/stamp.jpg' alt='Печать' width='170' height='170' />
+      <div class='card__photoborder'>
+        <img width="130" height="135" src="assets/photo.jpg" class="card__photo" alt='Фотография архаровца' />
+      </div>
+      <section class='card__signatures'>
+        <label class='card__label card__label--italic card__sign--front' for='secretary-sign'>Секретарь райкома</label>
+        <div class='card__input--wrapper card__signature'>
+          <img alt='Подпись главного' width='200' height='24' src='./assets/signature.png' />
+        </div>
+        <div class='top--2em card__wrapper--row text--adjust'>
+          <div class='card__input--wrapper card__daymonth'>
+            <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='24 Cентября' name='date' />
+          </div>
+          <p class='card__label'>20</p>
+          <div class='card__input--wrapper card__year'>
+            <input class='card__input card__input--front' readonly aria-readonly="true" type="text" value='19' name='year'>
+          </div>
+          <p class='card__label card__label--italic'>г.</p>
+        </div>
+      </section>
+    </footer>
+  </div>        
+</section>
