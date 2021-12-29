@@ -6,7 +6,8 @@ Stack that I'm most experienced with: React, CSS (SASS), Typescript.
 
 Technologies that I've either tried by myself or experienced at work projects: Vue2, Next.js, Nest.js (Express), various state-management libraries, various CSS-in-JS solutions.
  
-You can find my photo portfolio here: <a href="https://io-film.vercel.app" target="_blank">io-film.vercel.app</a>
+You can read the information about my commercial projects here: <a href="https://rayetzki.netlify.app" target="_blank">Personal Portfolio</a>🔗<br />
+Or you can view my photo portfolio here: <a href="https://io-film.vercel.app" target="_blank">Photo portfolio</a>🔗
 
 ### How to reach me
 
