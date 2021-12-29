@@ -8,7 +8,8 @@
 
 .card__front {
   padding: .5em;
-  background: var(--card-front-page);
+  background-image: url(../assets/old-paper.jpg);
+  background-repeat: repeat-x;
 }
 
 .card__front .card__border--thin {
