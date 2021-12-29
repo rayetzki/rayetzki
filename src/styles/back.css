@@ -101,7 +101,7 @@
 
 .card__number--body,
 .card__date--body {
-  flex-basis: var(--number-width);
+  flex-basis: calc(var(--number-width) - 2px);
 }
 
 .card__date--body {

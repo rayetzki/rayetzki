@@ -20,14 +20,18 @@ p {
 
 .card {
   display: grid;
+  min-height: fit-content;
   grid-template-columns: minmax(100px, .8fr) 1fr;
-  height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 810px) {
   .card {
-    grid-template-rows: minmax(100px, .8fr) 1fr;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: initial;
+  }
+
+  .card__back {
+    margin-block-start: 1em;
   }
 }
 
