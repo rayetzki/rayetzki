@@ -87,8 +87,7 @@
 .card__blankrow {
   display: flex;
   flex-direction: row;
-  min-height: 30px;
-  max-height: var(--number-width);
+  min-height: 100px;
   text-align: center;
   margin-inline: .5em; 
 }
