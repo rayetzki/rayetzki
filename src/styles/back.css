@@ -106,8 +106,9 @@
   border-right: 3px solid black;
 }
 
-.card__number--body,
-.card__date--body {
+.card__back .card__number--body,
+.card__back .card__date--body {
+  text-align: center;
   flex-basis: calc(var(--number-width) + .5em - 1px);
 }
 
