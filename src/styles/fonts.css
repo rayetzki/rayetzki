@@ -1,9 +1,9 @@
 @font-face {
   font-family: "DS Moster";
-  src: url("../fonts/DS_Moster.ttf") format("ttf"),
+  src: url("../fonts/DS_Moster.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Biro Script Plus Sloppy";
-  src: url("../fonts/BiroScriptPlus-Sloppy.ttf") format("ttf"),
+  src: url("../fonts/BiroScriptPlus-Sloppy.ttf") format("truetype");
 }
