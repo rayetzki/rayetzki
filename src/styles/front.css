@@ -137,7 +137,7 @@
 .card__stamp {
   position: absolute;
   z-index: 1;
-  left: 25%;
+  left: 15%;
   bottom: 5px;
   mix-blend-mode: color-burn;
   transform: rotate(-25deg);
