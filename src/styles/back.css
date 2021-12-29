@@ -4,8 +4,8 @@
 :root {
   --number-width: 2.5em;
   --date-width: calc(3 * var(--number-width));
-  --info-width: minmax(250px, 1fr);
-  --reasons-width: 155px;
+  --info-width: minmax(350px, 1fr);
+  --reasons-width: 100px;
 }
 
 .card__back [role="table"] {
@@ -95,13 +95,20 @@
 
 .card__blankcell {
   font-family: var(--handwritten-font);
-  border-right: 3px solid black;
+  font-size: small;
+  text-align: left;
+  break-after: right;
+  flex-shrink: 0;
   border-radius: 7px 1px 7px 1px / 1px 10px 1px 7px;
+}
+
+.card__blankcell:not(:last-child) {
+  border-right: 3px solid black;
 }
 
 .card__number--body,
 .card__date--body {
-  flex-basis: calc(var(--number-width) - 2px);
+  flex-basis: calc(var(--number-width) + .5em - 1px);
 }
 
 .card__date--body {
@@ -112,8 +119,11 @@
 
 .card__info--body {
   flex-grow: 1;
+  flex-basis: calc(100% - var(--number-width) * 5 - var(--reasons-width) - .5em - 1px);
 }
 
 .card__reasons--body {
+  text-align: center;
+  font-size: medium;
   flex-basis: var(--reasons-width);
 }
