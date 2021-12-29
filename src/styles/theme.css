@@ -3,6 +3,8 @@
   :root {
     --typewriter-font: 'DS Moster', sans-serif;
     --handwritten-font: 'Biro Script Plus Sloppy';
+    --handwritten-font-v1: 'Veles';
+    --handwritten-font-v2: 'Bad Script';
     --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
     --card-back-page: linear-gradient(#fcfcfc, #ffffff);
     --text-color: #444d4f;
@@ -13,6 +15,8 @@
   :root {
     --typewriter-font: 'DS Moster', sans-serif;
     --handwritten-font: 'Biro Script Plus Sloppy';
+    --handwritten-font-v1: 'Veles';
+    --handwritten-font-v2: 'Bad Script';
     --card-front-page: linear-gradient(#dfd8c6, #e6dfcd);
     --card-back-page: linear-gradient(#fcfcfc, #ffffff);
     --text-color: #444d4f;

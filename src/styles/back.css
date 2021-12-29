@@ -128,3 +128,17 @@
   font-size: medium;
   flex-basis: var(--reasons-width);
 }
+
+.card__back #Astarios .card__blankcell {
+  font-family: var(--handwritten-font-v1);
+}
+
+.card__back #Astarios .card__blankcell.card__reasons--body {
+  font-size: x-small;
+  text-decoration: double underline;
+}
+
+.card__back #Digis .card__blankcell {
+  font-family: var(--handwritten-font-v2);
+  font-style: italic;
+}
