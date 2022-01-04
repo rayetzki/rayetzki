@@ -4,7 +4,7 @@
 :root {
   --number-width: 2.5em;
   --date-width: calc(3 * var(--number-width));
-  --info-width: minmax(350px, 1fr);
+  --info-width: minmax(175px, 1fr);
   --reasons-width: 100px;
 }
 
