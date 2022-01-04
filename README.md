@@ -1,4 +1,4 @@
-### Hi, Reader 👋
+### Hi 👋
 
 My name is Illia Raietskyi. I am a Web-Developer based in Kyiv, Ukraine. Currently working at EPAM Systems full-time, but open for interesting open-source projects.
 
