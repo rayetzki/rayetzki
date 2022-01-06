@@ -21,7 +21,7 @@ p {
 .card {
   display: grid;
   min-height: fit-content;
-  grid-template-columns: minmax(350px, 1fr) 1fr;
+  grid-template-columns: minmax(175px, 1fr) 1fr;
 }
 
 @media only screen and (max-width: 810px) {
@@ -169,7 +169,7 @@ p {
 }
 
 .text--rotate {
-  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
 }
 
 .card__input {
