@@ -4,8 +4,21 @@
 :root {
   --number-width: 2.5em;
   --date-width: calc(3 * var(--number-width));
-  --info-width: minmax(175px, 1fr);
+  --info-width: 1fr;
   --reasons-width: 100px;
+}
+
+@media only screen and (max-width: 810px) {
+  :root {
+    --number-width: 32px;
+    --info-width: minmax(150px, 1fr);
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .card__back {
+    margin-block-start: 1em;
+  }
 }
 
 .card__back [role="table"] {
@@ -48,7 +61,7 @@
 
 .card__back .card__cell {
   font-family: var(--typewriter-font);
-  font-size: 1em;
+  font-size: medium;
   font-weight: 100;
   padding: 6px;
   border-left: none;
@@ -61,6 +74,13 @@
   width: var(--date-width);
 }
 
+@media only screen and (max-width: 810px) { 
+  .card__back .card__cell {
+    font-size: small;
+    padding: 3px;
+  }
+}
+
 .card__date--header + .card__date--parts {
   display: flex;
   flex-direction: row;
@@ -68,7 +88,14 @@
 }
 
 .card__date--parts .card__cell {
+  flex-grow: 1;
+  flex-basis: var(--number-width);
+}
+
+.card__info--header .card__cell {
+  display: inline-flex;
   flex: 1;
+  justify-content: center;
 }
 
 .card__back .card__reasons--header {
@@ -119,6 +146,12 @@
 .card__info--body {
   flex-grow: 1;
   flex-basis: calc(100% - var(--number-width) * 5 - var(--reasons-width) - .5em - 1px);
+}
+
+@media only screen and (max-width: 810px) {
+  .card__info--body {
+    flex-basis: calc(100% - var(--number-width) * 5 - var(--reasons-width) - 1em);
+  }
 }
 
 .card__reasons--body {

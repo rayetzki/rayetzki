@@ -12,6 +12,12 @@
   background-repeat: repeat-x;
 }
 
+@media only screen and (max-width: 810px) {
+  .card__front {
+    width: min-content;
+  }
+}
+
 .card__front .card__border--thin {
   height: 100%;
 }

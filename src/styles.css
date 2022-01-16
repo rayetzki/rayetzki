@@ -6,14 +6,6 @@
 @import './styles/front.css';
 @import './styles/back.css';
 
-body {
-  height: calc(100vh - 1em);
-}
-
-main {
-  height: 100%;
-}
-
 p {
   margin-block: 0;
 }
@@ -27,11 +19,7 @@ p {
 @media only screen and (max-width: 810px) {
   .card {
     display: grid;
-    grid-template-columns: initial;
-  }
-
-  .card__back {
-    margin-block-start: 1em;
+    grid-template-columns: auto;
   }
 }
 
