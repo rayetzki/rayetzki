@@ -12,9 +12,9 @@
   background-repeat: repeat-x;
 }
 
-@media only screen and (max-width: 810px) {
+@media screen and (max-width: 810px) {
   .card__front {
-    width: min-content;
+    min-width: min-content;
   }
 }
 
@@ -30,7 +30,6 @@
 
 .card__title--front {
   max-height: fit-content;
-  max-width: min-content;
   margin-block: .5em;
   padding-inline: .75em 0;
   transform: rotate(0.1deg);
