@@ -1,6 +1,6 @@
 ### Hi 👋
 
-My name is Illia Raietskyi. I am a Web-Developer based in Kyiv, Ukraine. Currently working at EPAM Systems full-time, but open for interesting open-source projects.
+My name is Illia Raietskyi. I am a Web-Developer based in Kyiv, Ukraine. Currently working at Acropolium full-time, but open for interesting open-source projects.
 
 Stack that I'm most experienced with: React, CSS (SASS), Typescript.
 
